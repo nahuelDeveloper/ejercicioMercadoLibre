@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="55m-Rp-IPw">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Monto-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SelectAmountViewController" customModule="EjercicioMercadoLibre" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dmN-QF-y8v" customClass="TPKeyboardAvoidingScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DoI-wr-BVH" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingrese el monto a retirar:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RVL-8b-t35">
+                                                <rect key="frame" x="84" y="40" width="207" height="22"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Monto" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tYp-qF-CFF">
+                                                <rect key="frame" x="93" y="92" width="190" height="30"/>
+                                                <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="190" id="8pJ-fa-DoU"/>
+                                                    <constraint firstAttribute="width" constant="190" id="dwL-TY-eM0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeD-eQ-z2v">
+                                                <rect key="frame" x="40" y="494" width="295" height="59"/>
+                                                <color key="backgroundColor" red="1" green="0.94117647059999998" blue="0.28627450980000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="QeD-eQ-z2v" secondAttribute="height" multiplier="5:1" id="ObU-84-yFY"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                <state key="normal" title="Siguiente">
+                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="nextButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAJ-os-SDA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="QeD-eQ-z2v" secondAttribute="bottom" constant="50" id="Nzk-Tk-dep"/>
+                                            <constraint firstItem="tYp-qF-CFF" firstAttribute="top" secondItem="RVL-8b-t35" secondAttribute="bottom" constant="30" id="OAO-KA-MdQ"/>
+                                            <constraint firstItem="tYp-qF-CFF" firstAttribute="centerX" secondItem="DoI-wr-BVH" secondAttribute="centerX" id="SrF-jf-ttk"/>
+                                            <constraint firstItem="RVL-8b-t35" firstAttribute="top" secondItem="DoI-wr-BVH" secondAttribute="top" constant="40" id="Xgl-ZR-ZgF"/>
+                                            <constraint firstItem="RVL-8b-t35" firstAttribute="centerX" secondItem="DoI-wr-BVH" secondAttribute="centerX" id="XnN-IR-Pl0"/>
+                                            <constraint firstAttribute="trailing" secondItem="QeD-eQ-z2v" secondAttribute="trailing" constant="40" id="mui-1L-xLd"/>
+                                            <constraint firstItem="QeD-eQ-z2v" firstAttribute="leading" secondItem="DoI-wr-BVH" secondAttribute="leading" constant="40" id="p0F-AY-VHO"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="DoI-wr-BVH" firstAttribute="top" secondItem="dmN-QF-y8v" secondAttribute="top" id="1xq-kb-cE8"/>
+                                    <constraint firstAttribute="bottom" secondItem="DoI-wr-BVH" secondAttribute="bottom" id="IDj-o6-hsq"/>
+                                    <constraint firstAttribute="trailing" secondItem="DoI-wr-BVH" secondAttribute="trailing" id="Nfh-tg-l4M"/>
+                                    <constraint firstItem="DoI-wr-BVH" firstAttribute="leading" secondItem="dmN-QF-y8v" secondAttribute="leading" id="XaK-I2-Fep"/>
+                                    <constraint firstItem="DoI-wr-BVH" firstAttribute="height" secondItem="dmN-QF-y8v" secondAttribute="height" id="fSh-8A-tqJ"/>
+                                    <constraint firstItem="DoI-wr-BVH" firstAttribute="width" secondItem="dmN-QF-y8v" secondAttribute="width" id="sTd-Bq-gJV"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dmN-QF-y8v" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1I1-VQ-JdA"/>
+                            <constraint firstItem="dmN-QF-y8v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="1MY-G9-qMR"/>
+                            <constraint firstItem="dmN-QF-y8v" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="I70-T5-WUk"/>
+                            <constraint firstItem="dmN-QF-y8v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IEh-Hf-i0f"/>
+                            <constraint firstAttribute="trailing" secondItem="dmN-QF-y8v" secondAttribute="trailing" id="RHM-La-4bZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dmN-QF-y8v" secondAttribute="bottom" id="fdx-5V-HEi"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Monto" id="uaE-1h-IU4">
+                        <barButtonItem key="backBarButtonItem" title=" " id="beC-aQ-obE"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="amountTextField" destination="tYp-qF-CFF" id="rjo-kd-qke"/>
+                        <outlet property="nextButton" destination="QeD-eQ-z2v" id="igb-5p-QvD"/>
+                        <segue destination="Lab-bp-IEn" kind="show" identifier="selectPaymentMethodSegue" id="M4T-hz-uXM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1342.5" y="425.5"/>
+        </scene>
+        <!--Medio de Pago-->
+        <scene sceneID="JuC-o4-RiL">
+            <objects>
+                <viewController id="Lab-bp-IEn" customClass="SelectPaymentMethodViewController" customModule="EjercicioMercadoLibre" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mTe-3a-rGO"/>
+                        <viewControllerLayoutGuide type="bottom" id="awB-f5-mzc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PgK-uU-9Hi">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dvf-5e-zxy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Dvf-5e-zxy" firstAttribute="top" secondItem="mTe-3a-rGO" secondAttribute="bottom" id="9I2-ID-YTf"/>
+                            <constraint firstItem="awB-f5-mzc" firstAttribute="top" secondItem="Dvf-5e-zxy" secondAttribute="bottom" id="FoG-Z0-9OX"/>
+                            <constraint firstItem="Dvf-5e-zxy" firstAttribute="leading" secondItem="PgK-uU-9Hi" secondAttribute="leading" id="LQb-sg-sRZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Dvf-5e-zxy" secondAttribute="trailing" id="adX-BN-T8P"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Medio de Pago" id="dNb-IN-c21">
+                        <barButtonItem key="backBarButtonItem" title=" " id="9I4-O7-nyr"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="Dvf-5e-zxy" id="HPG-at-Ubi"/>
+                        <segue destination="fOH-gp-Xaz" kind="show" identifier="selectBankSegue" id="hkD-fd-DU8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="apo-Bd-sdf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1938.5" y="425.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="T2f-sF-kZC">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="55m-Rp-IPw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="9FL-bn-MZs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.12941176469999999" green="0.1333333333" blue="0.38823529410000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="1" green="0.94117647058823528" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <color key="textColor" red="0.12941176470588234" green="0.13333333333333333" blue="0.38823529411764707" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="95Q-uv-vZy"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="loy-Kv-fkd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="690.5" y="425.5"/>
+        </scene>
+        <!--Cuotas-->
+        <scene sceneID="HsD-80-KtV">
+            <objects>
+                <viewController id="ye2-yO-3UA" customClass="SelectInstallmentsViewController" customModule="EjercicioMercadoLibre" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qFV-pX-FB7"/>
+                        <viewControllerLayoutGuide type="bottom" id="KqL-LR-dZn"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Xu-JB-yPd">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="cuW-in-Bur">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="DefaultCell" id="KIH-d1-A0i">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KIH-d1-A0i" id="Frf-XF-IIH">
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cuW-in-Bur" firstAttribute="leading" secondItem="7Xu-JB-yPd" secondAttribute="leading" id="OaR-G8-DnD"/>
+                            <constraint firstAttribute="trailing" secondItem="cuW-in-Bur" secondAttribute="trailing" id="RZF-8z-OLZ"/>
+                            <constraint firstItem="KqL-LR-dZn" firstAttribute="top" secondItem="cuW-in-Bur" secondAttribute="bottom" id="Ybt-P5-42O"/>
+                            <constraint firstItem="cuW-in-Bur" firstAttribute="top" secondItem="qFV-pX-FB7" secondAttribute="bottom" id="rdH-14-qbe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Cuotas" id="XU9-hd-7Lx"/>
+                    <connections>
+                        <outlet property="tableView" destination="cuW-in-Bur" id="fZq-Pm-tEC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XrX-Qa-Bjg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3301.5" y="425.5"/>
+        </scene>
+        <!--Banco-->
+        <scene sceneID="Pru-mW-qLy">
+            <objects>
+                <viewController id="fOH-gp-Xaz" customClass="SelectBankViewController" customModule="EjercicioMercadoLibre" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XbT-8F-mzE"/>
+                        <viewControllerLayoutGuide type="bottom" id="yhv-an-HS3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ubq-vx-3GJ">
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dP6-L3-Mni">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="559"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dP6-L3-Mni" firstAttribute="leading" secondItem="ubq-vx-3GJ" secondAttribute="leading" id="6ef-vT-5Sl"/>
+                            <constraint firstItem="yhv-an-HS3" firstAttribute="top" secondItem="dP6-L3-Mni" secondAttribute="bottom" id="77g-Fz-O5g"/>
+                            <constraint firstAttribute="trailing" secondItem="dP6-L3-Mni" secondAttribute="trailing" id="KNj-Tt-PCa"/>
+                            <constraint firstItem="dP6-L3-Mni" firstAttribute="top" secondItem="XbT-8F-mzE" secondAttribute="bottom" id="NHt-IJ-kC6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Banco" id="YHK-jA-Uld">
+                        <barButtonItem key="backBarButtonItem" title=" " id="cKl-n3-3VV"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="dP6-L3-Mni" id="GAN-Of-Bfh"/>
+                        <segue destination="ye2-yO-3UA" kind="show" identifier="selectInstallmentsSegue" id="0xa-EP-Ffr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="taQ-q6-VyL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2573.5" y="425.5"/>
+        </scene>
+    </scenes>
+</document>

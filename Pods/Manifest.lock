@@ -1,0 +1,36 @@
+PODS:
+  - Alamofire (3.4.1)
+  - DZNEmptyDataSet (1.8.1)
+  - NYAlertViewController (1.3.0)
+  - ObjectMapper (1.4.0)
+  - SVProgressHUD (2.0.3)
+  - TPKeyboardAvoiding (1.3)
+  - YYCache (1.0.3)
+  - YYImage (1.0.3):
+    - YYImage/Core (= 1.0.3)
+  - YYImage/Core (1.0.3)
+  - YYWebImage (1.0.4):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - DZNEmptyDataSet
+  - NYAlertViewController
+  - ObjectMapper (~> 1.2)
+  - SVProgressHUD
+  - TPKeyboardAvoiding (~> 1.2)
+  - YYWebImage (~> 1.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
+  DZNEmptyDataSet: 9525833b9e68ac21c30253e1d3d7076cc828eaa7
+  NYAlertViewController: b93f82e2c1fc6d5e9485512ddbe7b481f463a074
+  ObjectMapper: a07ad0462c5adf014adc0f89ef04c29b626e855e
+  SVProgressHUD: b0830714205bea1317ea1a2ebc71e5633af334d4
+  TPKeyboardAvoiding: a5138f318c06fb3e151f886e18ce4a72695d9cbe
+  YYCache: 282f35b5b0990833d0b7a06d864a87141a021da2
+  YYImage: 362f44ffba1fc498f2152060f3bb54ed84600981
+  YYWebImage: 0431ed108e104527669b86f75efd58958425cca2
+
+COCOAPODS: 0.39.0
